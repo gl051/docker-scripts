@@ -15,6 +15,4 @@ docker run -d --rm --name "$CONTAINER_NAME" \
            -v "$HOME"/common/docker/volumes/rabbit:/var/lib/rabbitmq \
            rabbitmq:management
 
-#docker exec "$CONTAINER_NAME" rabbitmq-plugins enable rabbitmq_management
 echo "Login at http://0.0.0.0:15672"
-# using RABBITMQ_DEFAULT_USER/RABBITMQ_DEFAULT_PASSWD
